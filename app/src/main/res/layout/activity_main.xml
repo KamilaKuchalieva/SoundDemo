@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="com.kamila.sounddemo.MainActivity">
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/background_dark"
+        android:text="@string/play"
+        android:textColor="@android:color/holo_blue_bright"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/playButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:max="10"
+        android:progress="3" />
+
+    <SeekBar
+        android:id="@+id/seekBarSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBarVolume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>
